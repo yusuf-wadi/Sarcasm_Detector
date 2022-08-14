@@ -178,3 +178,18 @@ print(out)
 
     ['Sarcasm']
     
+
+--and now if we input: *"There is an orange farm creating juice for locals"*
+
+
+
+```python
+user = input("Speak: ")
+data = cv.transform([user])
+out = model.predict(data)
+print(out)
+
+```
+
+    ['Not_Sarcasm']
+    
